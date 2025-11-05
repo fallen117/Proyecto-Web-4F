@@ -11,9 +11,10 @@ document.querySelectorAll('.cta-btn').forEach(btn => {
 });
 
 // Mi carrito - Incrementador de cantidad
- const countSpan = document.getElementById("count");
-  const incrementBtn = document.getElementById("increment");
-  const decrementBtn = document.getElementById("decrement");
+document.querySelectorAll('.product-actions-number').forEach(container => {
+  const countSpan = container.querySelector('.count');
+  const incrementBtn = container.querySelector('.increment');
+  const decrementBtn = container.querySelector('.decrement');
 
   incrementBtn.addEventListener("click", () => {
     countSpan.textContent = parseInt(countSpan.textContent) + 1;
@@ -23,3 +24,4 @@ document.querySelectorAll('.cta-btn').forEach(btn => {
     const current = parseInt(countSpan.textContent);
     if (current > 1) countSpan.textContent = current - 1;
   });
+});
