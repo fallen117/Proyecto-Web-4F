@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>4F Sport Store — Homepage</title>
+
+  <link rel="stylesheet" href="index.html">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Fuentes -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Open+Sans:wght@300;400;600&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS principal -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Fuentes google fonts -->
+  <script src="https://kit.fontawesome.com/049b7c3527.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Black+Ops+One&display=swap"
+    rel="stylesheet">
+</head>
+
+
+<body>
+  <div class="page">
+
+    <!-- Top bar -->
+    <div class="topbar">
+      <div class="container-topbar">
+        <div>¡Bienvenido a 4F - Sport Store!</div>
+
+        <div class="brand-logo-main">
+          <img src="img/4F.png" alt="4F Logo">
+        </div>
+
+        <div>
+          <a href="#" class="lang">ES</a>
+          <a href="#" class="lang">EN</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header class="site-header">
+      <div class="header-inner container-fluid">
+        <div class="user-actions">
+
+
+          <span><i class="fa-solid fa-user" style="font-size: 25px;"></i><a href="index.html">Iniciar sesión</a> </span>
+          </button>
+
+
+          <span><i class="fa-solid fa-cart-shopping" style="font-size: 25px;"></i><a href="carrito.html">Mi
+              carrito</a></span>
+          </button>
+        </div>
+
+
+
+        <nav class="nav-main">
+          <a href="#">Explora</a>
+          <a href="#">Calzado</a>
+          <a href="#">Accesorios</a>
+          <a href="#">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="cart-page container-fluid">
+      <div class="row">
+        <!-- Lista de productos -->
+        <div class="col-lg-8 cart-products">
+          <h2>Resumen de productos (4)</h2>
+
+          <!-- Bloque Adidas -->
+          <div class="brand-section">
+            <h3>Productos de adidas <img src="img/adidas logo.png" class="brand-icon" alt="adidas"></h3>
+            <div class="product-card">
+              <img src="img/producto Tenis adidas.png" alt="Adidas Tenis">
+              <div class="product-info">
+                <h4>adidas Tenis Adizero Pro 4</h4>
+                <p>Color: Blanco<br>Talla: 7 US</p>
+                <strong>$ 1.300.000</strong>
+              </div>
+
+              <div class="product-actions">
+                <div class="product-actions-number">
+                  <button id="decrement">-</button>
+                  <span id="count">1</span>
+                  <button id="increment">+</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Bloque Nike -->
+          <div class="brand-section">
+            <h3>Productos de Nike <img src="img/Nike logo.png" class="brand-icon" alt="Nike"></h3>
+            <div class="product-card">
+              <img src="img/producto Sueter nike.png" alt="Nike Tee">
+              <div class="product-info">
+                <h4>Atlético Nacional Crest Tee Dri-FIT 2025</h4>
+                <p>Color: Blanco/Verde<br>Talla: XL</p>
+                <strong>$ 147.000</strong>
+              </div>
+              
+              <div class="product-actions">
+                <div class="product-actions-number">
+                  <button id="decrement">-</button>
+                  <span id="count">1</span>
+                  <button id="increment">+</button>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="product-card">
+              <img src="img/Producto tenis nike.png" alt="Nike SB Heritage">
+              <div class="product-info">
+                <h4>Nike SB Heritage Vulc</h4>
+                <p>Color: Blanco/Beige<br>Talla: 8 US</p>
+                <strong>$ 430.000</strong>
+              </div>
+
+              <div class="product-actions">
+                <div class="product-actions-number">
+                  <button id="decrement">-</button>
+                  <span id="count">1</span>
+                  <button id="increment">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bloque Puma -->
+          <div class="brand-section">
+            <h3>Productos de Puma <img src="img/puma.png" class="brand-icon" alt="Puma"></h3>
+            <div class="product-card">
+              <img src="img/Producto gorra puma.png" alt="Gorra Puma">
+              <div class="product-info">
+                <h4>Gorra ajustable BMW M Motorsport</h4>
+                <p>Color: Negro<br>Talla: Adulto</p>
+                <strong>$ 136.000</strong>
+              </div>
+              <div class="product-actions">
+                <div class="product-actions-number">
+                  <button id="decrement">-</button>
+                  <span id="count">1</span>
+                  <button id="increment">+</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Resumen de compra -->
+        <div class="col-lg-4 cart-summary">
+          <div class="summary-box">
+            <h3>Resumen de compra</h3>
+            <div class="summary-item"><span>Productos (4)</span><span>$ 2.013.000</span></div>
+            <div class="summary-item"><span>Entrega</span><span>Gratis</span></div>
+            <div class="summary-item"><span>Cupón de descuento</span><span>No aplica</span></div>
+            <a href="#" class="apply-coupon">Aplicar cupón de descuento</a>
+
+            <div class="summary-buttons">
+              <button class="btn-delete"><i class="fa-solid fa-trash"></i> Eliminar productos</button>
+              <button class="btn-pay"><i class="fa-solid fa-cart-shopping"></i> Pagar</button>
+            </div>
+
+            <p class="terms">
+              Al continuar, confirmas que has leído y aceptas los
+              <a href="#">Términos y condiciones</a> y la <a href="#">Política de privacidad</a>.
+            </p>
+          </div>
+
+          <div class="extra-info">
+            <p><i class="fa-solid fa-rotate-left"></i> Devoluciones gratis (Plazo de 30 días)</p>
+            <p><i class="fa-solid fa-truck"></i> Envíos gratis a partir de $300.000</p>
+            <p><i class="fa-solid fa-credit-card"></i> Diferentes métodos de pago</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="legal">
+        <div>Política de privacidad | Términos y condiciones</div>
+        <div>© 2025 4F - Sport Store. Todos los derechos reservados.</div>
+      </div>
+      <div class="social">
+        <a href="#"><i class="fa-solid fa-location-dot"></i> Colombia</a>
+        <div class="icon"><i class="fa-brands fa-instagram"></i></div>
+        <div class="icon"><i class="fa-brands fa-facebook"></i></div>
+        <div class="icon"><i class="fa-brands fa-x-twitter"></i></div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS principal -->
+  <script src="script.js"></script>
+</body>
+
+
+
+
+
+</html>
