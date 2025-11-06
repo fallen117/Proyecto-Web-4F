@@ -924,30 +924,43 @@ a {
 /* =========================
    RESPONSIVE - PRODUCTO1.HTML
 ========================= */
+/* ===== RESPONSIVE para galería de producto ===== */
+/* ===== Responsive ===== */
+@media (max-width: 992px) {
+  .product-gallery {
+    padding: 0 1rem;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .product-gallery {
+    padding: 0 0.5rem;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+}
+
 
 /* ===== Pantallas medianas (tablets) ===== */
 @media (max-width: 992px) {
   .product-detail {
     padding: 2rem 1rem;
   }
-
-  /* Galería */
-  .product-gallery {
-    margin-bottom: 2rem;
-  }
-
-  .gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-  }
-
-  .gallery-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-  }
-
+  
   /* Info del producto */
   .product-info {
     text-align: center;
@@ -1146,26 +1159,40 @@ a {
 }
 
 /* Galería de imágenes */
+
+.product-gallery {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 15px;
 }
 
-.gallery-item img {
-  width: 620px;
-  height: 485px;
-  object-fit: cover;
-  transition: transform 0.4s ease;
-  border-radius: 5px;
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
-.product-gallery{
-  width: 75%;
+.gallery-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3; /* mantiene proporción */
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.4s ease;
+  max-width: 100vw; /* evita que sobrepase el ancho del viewport */
 }
 
 .gallery-item img:hover {
-  transform: scale(1.05) translateX(10px);
+  transform: scale(1.03);
 }
 
 /* Información del producto */
