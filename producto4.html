@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>4F Sport Store — Homepage</title>
+
+    <link rel="stylesheet" href="carrito.html">
+    <link rel="stylesheet" href="index.html">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Fuentes -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Open+Sans:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Fuentes google fonts -->
+    <script src="https://kit.fontawesome.com/049b7c3527.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Black+Ops+One&display=swap"
+        rel="stylesheet">
+</head>
+
+
+<body>
+    <div class="page">
+
+        <!-- Top bar -->
+        <div class="topbar">
+            <div class="container-topbar">
+                <div>¡Bienvenido a 4F - Sport Store!</div>
+
+                <div class="brand-logo-main">
+                    <img src="img/4F.png" alt="4F Logo">
+                </div>
+
+                <div>
+                    <a href="#" class="lang">ES</a>
+                    <a href="#" class="lang">EN</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Header -->
+        <header class="site-header">
+            <div class="header-inner container-fluid">
+                <div class="user-actions">
+
+
+                    <span><i class="fa-solid fa-user" style="font-size: 25px;"></i><a href="index.html">Iniciar
+                            sesión</a> </span>
+                    </button>
+
+
+                    <span><i class="fa-solid fa-cart-shopping" style="font-size: 25px;"></i><a href="carrito.html">Mi
+                            carrito</a></span>
+                    </button>
+                </div>
+
+
+
+                <nav class="nav-main">
+                    <a href="#">Explora</a>
+                    <a href="#">Calzado</a>
+                    <a href="#">Accesorios</a>
+                    <a href="#">Contacto</a>
+                </nav>
+            </div>
+        </header>
+
+
+        <main class="product-detail container-fluid">
+            <div class="row justify-content-center align-items-start mt-5">
+
+                <!-- Galería de imágenes -->
+                <div class="col-lg-7 product-gallery">
+                    <div class="gallery-grid">
+                        <div class="gallery-item"><img src="img/productos/under_buzo.png" alt="Zapatilla vista lateral">
+                        </div>
+                        <div class="gallery-item"><img src="img/productos/under_buzo2.png"
+                                alt="Zapatilla vista superior"></div>
+                        <div class="gallery-item"><img src="img/productos/under_buzo3.png"
+                                alt="Zapatilla vista inclinada"></div>
+                        <div class="gallery-item"><img src="img/productos/under_logo.png">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Información del producto -->
+                <div class="col-lg-5 product-info">
+                    <p class="breadcrumb">Gym, hombre| +400 vendidos</p>
+                    <h1 class="product-title">Buzo UA Rival Fleece</h1>
+                    <p class="product-brand">Producto original de <img src="img/productos/under_logo.png" class="brand-icon"
+                            alt="adidas" style="margin-left: 20px;"></p>
+                    <h2 class="product-price">$ 129.900 COP</h2>
+                    <a href="#" class="payment-link">Ver medios de pago autorizados</a>
+
+                    <div class="product-extra">
+                        <p class="text-success"><strong>Devolución gratis</strong></p>
+                        <p class="small-text">Plazo de 30 días desde la fecha de recibimiento del producto.</p>
+                        <a href="#" class="terms-link">Conoce más en Términos y condiciones.</a>
+                    </div>
+
+                    <div class="product-sizes">
+                        <h4>Disponibilidad de tallas:</h4>
+                        <div class="size-options">
+                            <button class="size-btn">M</button>
+                            <button class="size-btn">X</button>
+                            <button class="size-btn">XL</button>
+                            <button class="size-btn">XXL</button>
+                        </div>
+                    </div>
+
+                    <div class="product-quantity">
+                        <h4>Elegir cantidad:</h4>
+                        <p class="stock-info">Stock disponible (+50 unidades)</p>
+                        <div class="quantity-control">
+                            <button class="decrement">-</button>
+                            <span class="count">1</span>
+                            <button class="increment">+</button>
+                            <span class="unit-label">Unidades</span>
+                        </div>
+                    </div>
+
+                    <div class="product-buttons">
+                        <button class="btn-buy">Comprar ahora</button>
+                        <button class="btn-cart"><i class="fa-solid fa-cart-shopping"></i> Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Productos relacionados -->
+            <section class="related-products mt-5">
+                <h3>Explora más productos oficiales de Nike™</h3>
+                <div class="related-flex">
+
+                    <div class="related-card">
+                        <div class="related-label" id="nike_gym">Gym</div>
+                    </div>
+                    <div class="related-card" id="nike_cal">
+                        <div class="related-label">Calzado</div>
+                    </div>
+                    <div class="related-card" id="nike_acc">
+                        <div class="related-label">Accesorios</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="legal">
+                <div><a href="">Política de privacidad</a> | <a href="">Términos y condiciones</a></div>
+                <div>© 2025 4F - Sport Store. Todos los derechos reservados.</div>
+            </div>
+            <div class="social">
+                <a href="#"><i class="fa-solid fa-location-dot"></i> Colombia</a>
+                <div class="icon"><i class="fa-brands fa-instagram"></i></div>
+                <div class="icon"><i class="fa-brands fa-facebook"></i></div>
+                <div class="icon"><i class="fa-brands fa-x-twitter"></i></div>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+
+</html>
