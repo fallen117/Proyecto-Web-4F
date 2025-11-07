@@ -25,3 +25,18 @@ document.querySelectorAll('.product-actions-number').forEach(container => {
     if (current > 1) countSpan.textContent = current - 1;
   });
 });
+
+document.querySelectorAll('.quantity-control').forEach(container => {
+  const countSpan = container.querySelector('.count');
+  const incrementBtn = container.querySelector('.increment');
+  const decrementBtn = container.querySelector('.decrement');
+
+  incrementBtn.addEventListener("click", () => {
+    countSpan.textContent = parseInt(countSpan.textContent) + 1;
+  });
+
+  decrementBtn.addEventListener("click", () => {
+    const current = parseInt(countSpan.textContent);
+    if (current > 1) countSpan.textContent = current - 1;
+  });
+});
