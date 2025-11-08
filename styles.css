@@ -1380,9 +1380,15 @@ a {
 #nike_acc::before{
   background-image: url(img/productos_nike3.png);
 }
+#under_cal::before{
+  background-image: url(img/productos_under.png);
+}
+#under_acc::before{
+  background-image: url(img/productos_under2.png);
+}
 
 .related-card:hover {
-  filter: blur(0);
+  filter: blur(0px);
   transform: scale(1.03);
 }
 
