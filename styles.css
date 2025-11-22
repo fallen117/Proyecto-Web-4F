@@ -7,6 +7,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  height: 100%;
 }
 
 h1, h2, h3, h4, h5 {
@@ -1400,4 +1401,110 @@ a {
   font-weight: 700;
   font-size: 20px;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+}
+
+
+
+
+/* LOGIN ESTILO */
+.site-login{
+  display: flex;
+  margin: 40px;
+  margin-top: 70px;
+  margin-bottom: 50px;
+
+}
+
+.login-container{
+  padding: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.login-banner{
+  width: 60%;
+  background-image: url(img/login-banner.png);
+  background-size: cover;
+  background-position: 100%;
+  border-radius: 20px;
+  padding: 50px;
+  margin: 30px;
+}
+.login-banner img{
+  margin: 20px;
+}
+.login-banner h1{
+  margin-bottom: 30px;
+  color: #9cbc74;
+  text-align: center;
+}
+.login-banner h2{
+  color: white;
+  margin-bottom: 30px;
+}
+.login-banner p{
+  font-size: 20px;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+}
+
+
+.login-container{
+  width: 50%;
+}
+.login-sesion{
+  background-color: #D9D9D9;
+  padding: 100px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.login-sesion-form{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 15px;
+}
+.login-sesion-form label{
+  margin: 15px;
+}
+.login-sesion-form input{
+  outline: none;
+  border-radius: 15px;
+  padding: 10px;
+  border: none;
+  transition: all .2s;
+}
+.login-sesion-form input:focus{
+  background-color: #B0CE88;
+}
+.login-sesion-buttons{
+  width: 100%;
+}
+.login-sesion-buttons button{
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 20px;
+  border-radius: 15px;
+  padding: 10px;
+  transition: all .2s;
+  outline: none;
+  border: none;
+}
+
+#submit:hover{
+  background-color: #B0CE88;
+}
+#submit:focus{
+  background-color: #96b66c;
+}
+#delete{
+  background-color: #d86262;
+}
+#delete:hover{
+  background-color: #E57C7C;
 }

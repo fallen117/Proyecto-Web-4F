@@ -40,3 +40,17 @@ document.querySelectorAll('.quantity-control').forEach(container => {
     if (current > 1) countSpan.textContent = current - 1;
   });
 });
+
+
+
+
+// LOGIN SCRIPT TEST
+
+document.getElementById("login-form").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const nombreUsuario = document.getElementById("name-user").value
+
+    alert("Usuario ingresado")
+    console.log("Nombre de usuario:",nombreUsuario)
+});
