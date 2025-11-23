@@ -39,10 +39,11 @@
         <div><a href="index.html">¡Bienvenido a 4F - Sport Store!</a></div>
 
         <div class="brand-logo-main">
-          <img src="img/4F.png" alt="4F Logo">
+          <a href="index.html"><img src="img/4F.png" alt="4F Logo"></a>
         </div>
 
         <div>
+          <button type="submit" id="login-close" onclick=cerrarSesion()><i class="fa-solid fa-user-slash" style="font-size: 25px;"></i>Cerrar sesión</button>
           <a href="#" class="lang">ES</a>
           <a href="#" class="lang">EN</a>
         </div>
@@ -55,7 +56,8 @@
         <div class="user-actions">
 
 
-          <span><i class="fa-solid fa-user" style="font-size: 25px;"></i><a href="login.html">Iniciar sesión</a> </span>
+          <span id="login-start"><i class="fa-solid fa-user" style="font-size: 25px;"></i><a href="login.html">Iniciar sesión</a> </span>
+          <span id="mostrar-name-user"></span>
           </button>
 
 
@@ -67,7 +69,7 @@
 
 
         <nav class="nav-main">
-          <a href="#">Explora</a>
+          <a href="index.html">Inicio</a>
           <a href="#">Calzado</a>
           <a href="#">Accesorios</a>
           <a href="#">Contacto</a>

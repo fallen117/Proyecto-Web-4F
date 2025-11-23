@@ -46,11 +46,49 @@ document.querySelectorAll('.quantity-control').forEach(container => {
 
 // LOGIN SCRIPT TEST
 
+
+window.addEventListener("DOMContentLoaded", () => {
+
+    const nombreUsuario = localStorage.getItem("name-user");
+
+    document.getElementById("mostrar-name-user").textContent = nombreUsuario;
+
+    validarUsuario("login-start");
+});
+
 document.getElementById("login-form").addEventListener("submit", function (e) {
     e.preventDefault();
 
-    const nombreUsuario = document.getElementById("name-user").value
+    const nombreUsuario = document.getElementById("name-user").value;
+    localStorage.setItem("name-user", nombreUsuario);
 
-    alert("Usuario ingresado")
-    console.log("Nombre de usuario:",nombreUsuario)
+    alert("Usuario ingresado correctamente.")
+    window.location.href="index.html"
 });
+
+function validarUsuario(idElemento) {
+  // Obtenemos el valor desde localStorage
+  const nombreUsuario = localStorage.getItem("name-user");
+
+  // Validamos si tiene texto (no null, no undefined, no vacío, no solo espacios)
+  if (nombreUsuario && nombreUsuario.trim() !== "") {
+    const elemento = document.getElementById(idElemento);
+    const cerrarSesion = document.getElementById("login-close")
+
+    if (elemento, cerrarSesion) {
+      elemento.style.display = "none"; 
+      cerrarSesion.style.display = "inline"
+      
+    } else {
+      console.warn(`No se encontró ningún elemento con el id: ${idElemento}`);
+      elemento.style.display = "none"; 
+      cerrarSesion.style.display = "inline";
+    }
+  } else {
+    console.log("No se ingresó ningún nombre de usuario en 'name-user'");
+  }
+}
+
+function cerrarSesion(){
+    window.location.href="login.html"
+}

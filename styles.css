@@ -1,6 +1,9 @@
 /* =========================
    ESTILOS GENERALES
 ========================= */
+*{
+  transition: all .2s;
+}
 body {
   font-family: 'Open Sans', sans-serif;/* fondo general claro */
   color: #231F20; /* texto principal oscuro */
@@ -40,6 +43,11 @@ a {
 }
 .topbar .lang:hover {
   text-decoration: underline;
+}
+#login-close{
+  background: none;
+  border: none;
+  display: none;
 }
 
 .container-topbar {
