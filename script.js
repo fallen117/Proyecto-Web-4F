@@ -51,7 +51,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
     const nombreUsuario = localStorage.getItem("name-user");
 
-    document.getElementById("mostrar-name-user").textContent = nombreUsuario;
+    document.getElementById("mostrar-name-user").innerHTML = "<i class='fa-solid fa-user' style='font-size: 25px;'></i>"+ nombreUsuario;
 
     validarUsuario("login-start");
 });
